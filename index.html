@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastGestor — Gestão Inteligente para o seu varejo</title>
+  <meta name="description" content="Veja tudo da sua loja em um só painel e converse com a IA para fazer consultas. FastGestor, da 3CFast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="screens.css">
+</head>
+<body>
+
+<!-- WhatsApp: https://wa.me/551633033139 -->
+
+<header class="header">
+  <div class="container">
+    <a href="#home" class="logo" aria-label="FastGestor">
+      <img class="logo-mark" src="img/logo.png" alt="3CFast">
+      <span>FastGestor<small>Gestão Inteligente</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav">
+      <a href="#modulos">Módulos</a>
+      <a href="#telas">Telas</a>
+      <a href="#ia">IA</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="https://wa.me/551633033139" class="btn btn--primary">Falar com um especialista</a>
+    </nav>
+    <div class="nav-overlay"></div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero section--grad" id="home">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">FastGestor · 3CFast</span>
+        <h1>Tudo da sua loja em um só painel.</h1>
+        <p class="lead"><strong>Veja</strong> vendas, estoque e financeiro em tempo real e <strong>converse com a IA</strong> para tirar qualquer dúvida do seu negócio.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/551633033139" class="btn btn--primary">Falar com um especialista</a>
+          <a href="#telas" class="btn btn--ghost">Ver o sistema</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" data-delay="2">
+        <div class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i></div>
+          <div class="screen" data-screen="dashboard" role="img" aria-label="Dashboard do FastGestor com faturamento, ticket médio e margem"></div>
+        </div>
+        <div class="float-card float-card--a"><span>Ticket médio</span><b>R$ 262,00</b></div>
+        <div class="float-card float-card--b"><span>Margem bruta</span><b>46,8%</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="facts section--grad">
+    <div class="container facts-grid">
+      <div class="reveal"><div class="fact-num" data-count="5000" data-prefix="+">+5.000</div><div class="fact-label">usuários</div></div>
+      <div class="reveal" data-delay="1"><div class="fact-num" data-count="20" data-prefix="+">+20</div><div class="fact-label">anos de experiência</div></div>
+      <div class="reveal" data-delay="2"><div class="fact-num" data-count="100" data-suffix="%">100%</div><div class="fact-label">integrado</div></div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS (aparelho + ícones) -->
+  <section class="section section--dark" id="modulos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Módulos</span>
+        <h2>Cada área da loja, na palma da mão</h2>
+        <p>Passe o mouse ou toque em um ícone e veja como a informação chega pronta, sem planilha e sem retrabalho.</p>
+      </div>
+
+      <div class="device reveal">
+        <div class="device-screens">
+          <div class="dscreen active"><div class="screen" data-screen="vendas" role="img" aria-label="Tela de Vendas"></div></div>
+          <div class="dscreen"><div class="screen" data-screen="compras" role="img" aria-label="Tela de Compras"></div></div>
+          <div class="dscreen"><div class="screen" data-screen="estoque" role="img" aria-label="Tela de Estoque"></div></div>
+          <div class="dscreen"><div class="screen" data-screen="contas-receber" role="img" aria-label="Tela Financeiro"></div></div>
+          <div class="dscreen"><div class="screen" data-screen="contabil" role="img" aria-label="Tela Contábil"></div></div>
+          <div class="dscreen"><div class="screen" data-screen="ia-chat" role="img" aria-label="Tela Conversar com IA"></div></div>
+        </div>
+      </div>
+
+      <div class="mod-nav" role="tablist">
+        <button class="mod-btn active" aria-label="Vendas"><span class="tip">Vendas</span><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12h11l2-8H6"/></svg></button>
+        <button class="mod-btn" aria-label="Compras"><span class="tip">Compras</span><svg viewBox="0 0 24 24"><path d="M2 6h11v9H2zM13 9h5l3 3v3h-8z"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></svg></button>
+        <button class="mod-btn" aria-label="Estoque"><span class="tip">Estoque</span><svg viewBox="0 0 24 24"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9"/></svg></button>
+        <button class="mod-btn" aria-label="Financeiro"><span class="tip">Financeiro</span><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></button>
+        <button class="mod-btn" aria-label="Contábil"><span class="tip">Contábil</span><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M9 13h6M9 17h6"/></svg></button>
+        <button class="mod-btn" aria-label="IA"><span class="tip">Conversar com IA</span><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></button>
+      </div>
+
+      <div class="mod-caption">
+        <div class="mod-info active">
+          <h3>Vendas</h3>
+          <p>Acompanhe o faturamento dia a dia e compare lojas, marcas e departamentos.</p>
+          <ul><li>Faturamento, ticket médio e margem bruta</li><li>Filtros por loja, marca, departamento e grupo</li><li>Desconto total e clientes no período</li></ul>
+        </div>
+        <div class="mod-info">
+          <h3>Compras</h3>
+          <p>Saiba quanto comprou, de quem e em qual loja, em poucos cliques.</p>
+          <ul><li>Total comprado, pedidos e itens por pedido</li><li>Compra diária e compra por loja</li><li>Comparativo de compra x venda x estoque</li></ul>
+        </div>
+        <div class="mod-info">
+          <h3>Estoque</h3>
+          <p>Posição de estoque por loja, tamanho, cor e referência, ideal para calçados e confecções.</p>
+          <ul><li>Valor em estoque a custo e valor potencial de venda</li><li>Produtos distintos, SKUs e itens em promoção</li><li>Alertas e giro de estoque</li></ul>
+        </div>
+        <div class="mod-info">
+          <h3>Financeiro</h3>
+          <p>Contas a pagar e a receber com situação, vencimento e atraso à vista.</p>
+          <ul><li>Total, pago, em aberto e atrasado</li><li>Gráfico por vencimento e por situação</li><li>Filtro por fornecedor, cliente e loja</li></ul>
+        </div>
+        <div class="mod-info">
+          <h3>Contábil</h3>
+          <p>Notas fiscais e cupons organizados, para a contabilidade e para você.</p>
+          <ul><li>NF-e de entrada e saída, total e canceladas</li><li>Emissões por estado</li><li>Filtro por CFOP, loja e chave da nota</li></ul>
+        </div>
+        <div class="mod-info">
+          <h3>Conversar com IA</h3>
+          <p>Pergunte em linguagem simples e receba a resposta com os dados da sua loja, sem procurar relatório.</p>
+          <ul><li>Vendas, estoque, clientes e financeiro em uma conversa</li><li>Atalhos para as perguntas mais comuns</li><li>Respostas na hora, sem planilha</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VITRINE DE TELAS (painel escuro + foto + abas com progresso) -->
+  <section class="section section--grad" id="telas">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Conheça o sistema</span>
+        <h2>Veja as telas do FastGestor</h2>
+        <p>Indicadores claros, gráficos que explicam e filtros que respondem rápido.</p>
+      </div>
+
+      <div class="showcase reveal">
+        <div class="sc-grid">
+          <div class="sc-left">
+            <div class="sc-slide active"><div class="sc-stage"><div class="screen" data-screen="dashboard" role="img" aria-label="Tela Dashboard"></div></div></div>
+            <div class="sc-slide"><div class="sc-stage"><div class="screen" data-screen="ia-chat" role="img" aria-label="Tela Conversar com IA"></div></div></div>
+            <div class="sc-slide"><div class="sc-stage"><div class="screen" data-screen="contas-pagar" role="img" aria-label="Tela Contas a pagar"></div></div></div>
+            <div class="sc-slide"><div class="sc-stage"><div class="screen" data-screen="estoque" role="img" aria-label="Tela Posição de estoque"></div></div></div>
+          </div>
+          <!-- Para usar uma foto: salve em landing/fotos/loja.jpg (o painel usa a foto automaticamente) -->
+          <div class="sc-photo" style="--photo:url('fotos/loja.jpg')">
+            <p class="sc-stat"><b>20%</b> <span>menos tempo gasto na gestão de estoque.</span></p>
+          </div>
+        </div>
+
+        <div class="sc-tabs">
+          <button class="sc-tab active"><span class="bar"><i></i></span><span class="lbl"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Dashboard</span></button>
+          <button class="sc-tab"><span class="bar"><i></i></span><span class="lbl"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Conversar com IA</span></button>
+          <button class="sc-tab"><span class="bar"><i></i></span><span class="lbl"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M9 13h6M9 17h6"/></svg>Contas a pagar</span></button>
+          <button class="sc-tab"><span class="bar"><i></i></span><span class="lbl"><svg viewBox="0 0 24 24"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9"/></svg>Posição de estoque</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- IA -->
+  <section class="section section--soft" id="ia">
+    <div class="container ai-grid">
+      <div class="reveal">
+        <span class="eyebrow">Conversar com IA</span>
+        <h2>Pergunte. O FastGestor responde.</h2>
+        <p>Chega de procurar o relatório certo. Faça a pergunta do seu jeito e a IA consulta os dados da sua loja para você.</p>
+        <a href="https://wa.me/551633033139" class="btn btn--primary">Falar com um especialista</a>
+      </div>
+      <div>
+        <div class="chat">
+          <div class="chat-head"><span class="chat-dot"></span>Conversar com IA</div>
+          <div class="chat-msgs" aria-live="polite"></div>
+          <div class="chat-input"><span class="chat-typed"></span><span class="chat-caret"></span><span class="chat-send">➤</span></div>
+          <p class="chat-note">Exemplo ilustrativo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que o FastGestor</span>
+        <h2>Gestão confiável para lojas físicas e online</h2>
+      </div>
+      <div class="grid-4">
+        <div class="feature reveal"><div class="feature-icon">📊</div><h3>Tudo em um lugar</h3><p>Vendas, compras, estoque e financeiro no mesmo painel.</p></div>
+        <div class="feature reveal" data-delay="1"><div class="feature-icon">🤖</div><h3>IA que responde</h3><p>Pergunte em linguagem simples e receba a resposta com os seus dados.</p></div>
+        <div class="feature reveal" data-delay="2"><div class="feature-icon">🏬</div><h3>Multi-lojas</h3><p>Compare lojas, marcas e períodos sem abrir uma planilha.</p></div>
+        <div class="feature reveal" data-delay="3"><div class="feature-icon">👟</div><h3>Feito para o varejo</h3><p>Grade de tamanhos e cores, ideal para calçados e confecções.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES x DEPOIS -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Jeito antigo x jeito FastGestor</span>
+        <h2>Menos planilha, mais decisão</h2>
+      </div>
+      <div class="compare">
+        <div class="compare-col compare-col--old reveal">
+          <h3>O jeito antigo</h3>
+          <ul>
+            <li>Relatórios separados para cada assunto</li>
+            <li>Planilhas para cruzar compra, venda e estoque</li>
+            <li>Esperar alguém montar o número que você precisa</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--new reveal" data-delay="2">
+          <h3>O jeito FastGestor</h3>
+          <ul>
+            <li>Um painel com todos os módulos</li>
+            <li>Compra x Venda x Estoque pronto para consulta</li>
+            <li>Pergunte à IA e tenha a resposta na hora</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Comece em 3 passos</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-num">1</div><h3>Fale com um especialista</h3><p>Conte como é a sua loja e o que você precisa acompanhar.</p></div>
+        <div class="step reveal" data-delay="1"><div class="step-num">2</div><h3>Conectamos os seus dados</h3><p>Suas lojas, produtos e movimentações chegam ao FastGestor.</p></div>
+        <div class="step reveal" data-delay="2"><div class="step-num">3</div><h3>Acompanhe e pergunte</h3><p>Use os painéis e converse com a IA para decidir mais rápido.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--soft" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq reveal">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">O que é o FastGestor?</button><div class="faq-a"><p>É um painel de gestão inteligente da 3CFast. Você vê vendas, compras, estoque, financeiro e contábil em um só lugar e ainda conversa com uma IA para fazer consultas.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Funciona para mais de uma loja?</button><div class="faq-a"><p>Sim. Os painéis têm filtro por loja e comparativos entre lojas e entre meses.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">O que a IA consegue responder?</button><div class="faq-a"><p>Perguntas sobre os dados da sua loja, como faturamento, ticket médio, estoque e contas. Fale com um especialista para ver exemplos com o seu negócio.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Como faço para contratar?</button><div class="faq-a"><p>Clique em "Falar com um especialista". Nosso time atende pelo WhatsApp.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section--grad cta-final">
+    <div class="container reveal">
+      <h2>Tecnologia que veste o varejo.</h2>
+      <p>Mais que um sistema, o impulso que o seu negócio precisa. Veja o FastGestor com a sua operação.</p>
+      <a href="https://wa.me/551633033139" class="btn btn--primary">Falar com um especialista</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <span>© 2026 3CFast Software · FastGestor</span>
+    <a href="https://www.3cfast.com.br/">3cfast.com.br</a>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Voltar ao topo">↑</button>
+<script src="screens.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

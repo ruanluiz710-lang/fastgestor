@@ -1,0 +1,183 @@
+/* Telas do FastGestor recriadas em HTML com dados fictícios.
+   Cada tela tem 1200x620 px e é reduzida por JS para caber no contêiner. */
+.screen { position: relative; width: 100%; aspect-ratio: 1200 / 620; overflow: hidden; background: #F3F4F8; }
+.scr {
+  position: absolute; top: 0; left: 0; width: 1200px; height: 620px; transform-origin: top left;
+  display: flex; font-family: 'Inter', system-ui, sans-serif; font-size: 13px; color: #111827; line-height: 1.3;
+}
+.scr * { box-sizing: border-box; }
+.scr-side { width: 60px; background: #1B2438; display: flex; flex-direction: column; align-items: center; padding: 14px 0; flex: none; }
+.scr-logo { width: 36px; height: 36px; border-radius: 9px; background: #2F5FD0; color: #fff; font: 800 14px 'Inter', sans-serif; display: grid; place-items: center; margin-bottom: 18px; }
+.scr-ico { width: 40px; height: 36px; display: grid; place-items: center; border-radius: 8px; margin-bottom: 6px; color: #A9B3C7; }
+.scr-ico svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.scr-ico.on { background: #1D4ED8; color: #fff; }
+.scr-sep { width: 34px; height: 1px; background: #2C3650; margin: 8px 0 12px; }
+.scr-grow { flex: 1; }
+.scr-main { flex: 1; min-width: 0; overflow: hidden; }
+.scr-top { height: 52px; background: #fff; border-bottom: 1px solid #E5E7EB; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+.scr-top h4 { margin: 0; font: 700 17px 'Inter', sans-serif; color: #111827; }
+.scr-top .meta { display: flex; align-items: center; gap: 12px; color: #9CA3AF; font-size: 12px; }
+.pill-live { background: #DCFCE7; color: #15803D; border-radius: 20px; padding: 3px 10px; font-weight: 600; font-size: 11px; }
+.btn-out { border: 1px solid #E5E7EB; border-radius: 8px; padding: 5px 12px; color: #374151; font-size: 12px; background: #fff; }
+.scr-body { padding: 16px 22px; }
+.hello { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.hello h5 { margin: 0; font: 700 21px 'Inter', sans-serif; }
+.hello p { margin: 2px 0 0; color: #6B7280; font-size: 13px; }
+.btn-blue { background: #1D4ED8; color: #fff; border-radius: 8px; padding: 9px 16px; font-weight: 600; font-size: 12.5px; }
+
+.filters { background: #fff; border: 1px solid #E8EAF0; border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0, 0, 0, .04); }
+.frow { display: flex; align-items: flex-end; gap: 10px; flex-wrap: wrap; }
+.frow + .frow { margin-top: 10px; }
+.fld { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: #4B5563; }
+.fld .box { background: #F3F4F6; border: 1px solid #E5E7EB; border-radius: 7px; padding: 6px 10px; font-size: 12px; color: #111827; min-width: 110px; display: flex; justify-content: space-between; gap: 10px; }
+.fld .box.wide { min-width: 170px; }
+.fld .box.xl { min-width: 260px; }
+.fld .box::after { content: "▾"; color: #6B7280; font-size: 10px; align-self: center; }
+.fld .box.date::after { content: "▦"; }
+.preset { display: flex; gap: 6px; }
+.preset span { border: 1px solid #E5E7EB; background: #fff; border-radius: 7px; padding: 5px 10px; font-size: 11.5px; color: #374151; }
+.preset span.on { background: #1D4ED8; border-color: #1D4ED8; color: #fff; font-weight: 600; }
+.fsep { width: 1px; align-self: stretch; background: #E5E7EB; margin: 0 4px; }
+.fbtns { margin-left: auto; display: flex; gap: 8px; }
+.fbtns .a { background: #1D4ED8; color: #fff; border-radius: 8px; padding: 7px 18px; font-weight: 600; font-size: 12px; }
+.fbtns .l { border: 1px solid #E5E7EB; border-radius: 8px; padding: 7px 18px; font-size: 12px; color: #4B5563; background: #fff; }
+.tabs2 { display: flex; gap: 8px; margin-bottom: 10px; }
+.tabs2 span { border: 1px solid #E5E7EB; background: #fff; border-radius: 8px; padding: 5px 12px; font-size: 11.5px; color: #374151; }
+.tabs2 span.on { background: #1D4ED8; border-color: #1D4ED8; color: #fff; font-weight: 600; }
+
+.kpis { display: grid; gap: 14px; margin-bottom: 14px; }
+.kpis.c4 { grid-template-columns: repeat(4, 1fr); }
+.kpis.c5 { grid-template-columns: repeat(5, 1fr); }
+.kpis.c6 { grid-template-columns: repeat(6, 1fr); }
+.kpis.c3 { grid-template-columns: repeat(3, 1fr); }
+.kpi { background: #fff; border: 1px solid #E8EAF0; border-radius: 12px; padding: 12px 14px; display: flex; gap: 11px; align-items: center; box-shadow: 0 1px 4px rgba(0, 0, 0, .04); min-width: 0; }
+.kpi .ic { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; font-size: 18px; flex: none; }
+.kpi .lb { font-size: 11.5px; color: #6B7280; white-space: nowrap; }
+.kpi .vl { font: 700 20px 'Inter', sans-serif; letter-spacing: -.01em; white-space: nowrap; }
+.kpi .sb { font-size: 10.5px; color: #9CA3AF; white-space: nowrap; }
+.kpi > div:last-child { min-width: 0; flex: 1; overflow: hidden; }
+.kpi .lb, .kpi .vl, .kpi .sb { overflow: hidden; text-overflow: ellipsis; }
+.kpis.c6 .kpi { padding: 10px 10px; gap: 8px; }
+.kpis.c6 .kpi .ic { width: 30px; height: 30px; font-size: 15px; border-radius: 8px; }
+.kpis.c6 .kpi .vl { font-size: 16px; }
+.kpis.c6 .kpi .lb { font-size: 11px; }
+.kpis.c5 .kpi { padding: 12px 12px; gap: 9px; }
+.kpis.c5 .kpi .ic { width: 34px; height: 34px; font-size: 16px; }
+.kpis.c5 .kpi .lb { font-size: 11px; }
+.blue { color: #1D4ED8; } .green { color: #0F9D6B; } .red { color: #DC2626; } .orange { color: #F97316; } .dark { color: #111827; }
+.t-blue { background: #E4ECFC; } .t-green { background: #DCF5E9; } .t-purple { background: #EFE9FD; } .t-orange { background: #FFEBDD; } .t-yellow { background: #FFF4CC; } .t-red { background: #FDE1E1; }
+
+.grid2 { display: grid; grid-template-columns: 1.45fr 1fr; gap: 14px; }
+.grid2.even { grid-template-columns: 1fr 1fr; }
+.cardc { background: #fff; border: 1px solid #E8EAF0; border-radius: 12px; padding: 14px 16px 6px; box-shadow: 0 1px 4px rgba(0, 0, 0, .04); min-width: 0; }
+.cardc h6 { margin: 0; font: 700 13px 'Inter', sans-serif; }
+.cardc small { display: block; color: #9CA3AF; font-size: 11px; margin: 2px 0 4px; }
+.legend { display: flex; justify-content: center; gap: 14px; font-size: 11px; color: #4B5563; margin: 4px 0 0; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.ax { font: 10px 'Inter', sans-serif; fill: #6B7280; }
+.donut-wrap { display: flex; align-items: center; justify-content: center; gap: 22px; padding-top: 6px; }
+.dl { font-size: 11px; color: #4B5563; }
+.dl div { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+.dl i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+.pie-list { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 34px; font-size: 11.5px; color: #374151; flex: 1; }
+.pie-list div { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+.pie-list i { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+.pie-list b { margin-left: auto; font-weight: 500; color: #6B7280; font-family: ui-monospace, monospace; font-size: 11px; }
+
+/* Tela "Conversar com IA" — conteúdo concentrado no topo do quadro, porque a
+   vitrine de telas só mostra a parte de cima de cada tela (mesmo corte usado
+   nas outras abas), então a barra de pergunta não pode ficar lá embaixo. */
+.ia-scr {
+  align-items: center; justify-content: center; position: relative;
+  background: linear-gradient(135deg, #0A1120 0%, #122A4D 55%, #1E4C8C 100%); color: #fff; padding: 40px;
+}
+/* Só na vitrine de telas (onde essa tela aparece cortada, mostrando apenas o topo)
+   o conteúdo sobe, para a barra de pergunta não ficar escondida no corte. Nos
+   Módulos a tela aparece inteira, então o conteúdo fica centralizado, ocupando
+   a tela toda de verdade. */
+.sc-stage .ia-scr { justify-content: flex-start; padding: 70px 40px 0; }
+.ia-wrap { width: 100%; max-width: 780px; }
+.ia-body { text-align: center; }
+.ia-body h5 { margin: 0 0 10px; font: 700 30px 'Inter', sans-serif; color: #fff; }
+.ia-body p { margin: 0 0 30px; font-size: 15px; color: rgba(255,255,255,.6); }
+.ia-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.ia-chip {
+  display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; border-radius: 30px;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16); color: #E7ECF5;
+  font: 500 15px 'Inter', sans-serif; white-space: nowrap;
+}
+.ia-bar { margin-top: 46px; display: flex; align-items: center; gap: 14px; }
+.ia-input {
+  flex: 1; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.18); border-radius: 14px;
+  padding: 16px 20px; color: rgba(255,255,255,.45); font: 400 15px 'Inter', sans-serif; display: flex;
+  justify-content: space-between; align-items: center; min-width: 0;
+}
+.ia-input-text { position: relative; flex: 1; height: 1.2em; min-width: 0; }
+.ia-input-text span { position: absolute; left: 0; top: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.ia-placeholder { color: rgba(255,255,255,.45); animation: ia-demo-placeholder 8s ease-in-out infinite; }
+.ia-typed { color: #fff; opacity: 0; animation: ia-demo-typed 8s ease-in-out infinite; }
+.ia-resize { font-style: normal; color: rgba(255,255,255,.35); font-size: 12px; letter-spacing: -2px; flex: none; margin-left: 12px; }
+.ia-new, .ia-send {
+  flex: none; padding: 15px 20px; border-radius: 12px; font: 600 14.5px 'Inter', sans-serif; white-space: nowrap;
+}
+.ia-new { background: #fff; color: #16233B; }
+.ia-send { background: #1D4ED8; color: #fff; animation: ia-demo-send 8s ease-in-out infinite; }
+
+/* Demonstração: um cursor clica numa sugestão (que fica destacada e preenche o
+   campo), depois clica em "Enviar" (a pergunta é "enviada" e o campo volta ao
+   normal) — tudo em CSS puro, em loop. As posições do cursor mudam conforme o
+   contexto: nos Módulos a tela aparece inteira e centralizada; na vitrine de
+   telas ela aparece cortada, subindo para o topo (ver .sc-stage .ia-scr). */
+.ia-scr {
+  --p0x: 1030px; --p0y: 530px; /* repouso do cursor */
+  --p1x: 444px;  --p1y: 289px; /* 1ª sugestão */
+  --p2x: 986px;  --p2y: 504px; /* botão Enviar */
+}
+.sc-stage .ia-scr {
+  --p0x: 820px; --p0y: 560px;
+  --p1x: 234px; --p1y: 319px;
+  --p2x: 776px; --p2y: 534px;
+}
+.ia-chip { transition: none; }
+.ia-chip--demo { animation: ia-demo-chip 8s ease-in-out infinite; }
+.ia-cursor {
+  position: absolute; top: 0; left: 0; width: 26px; height: 26px; pointer-events: none; z-index: 5;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,.5));
+  animation: ia-demo-cursor 8s ease-in-out infinite;
+}
+.ia-cursor svg { width: 100%; height: 100%; fill: #fff; stroke: #0A1120; stroke-width: 1.3; stroke-linejoin: round; }
+
+@keyframes ia-demo-cursor {
+  0%      { transform: translate(var(--p0x), var(--p0y)) scale(1); }
+  12%     { transform: translate(var(--p1x), var(--p1y)) scale(1); }   /* chega na sugestão */
+  15%     { transform: translate(var(--p1x), var(--p1y)) scale(.8); }  /* pressiona */
+  18%     { transform: translate(var(--p1x), var(--p1y)) scale(1); }   /* clica */
+  45%     { transform: translate(var(--p1x), var(--p1y)) scale(1); }   /* segura, lendo */
+  50%     { transform: translate(var(--p2x), var(--p2y)) scale(1); }   /* vai até Enviar */
+  53%     { transform: translate(var(--p2x), var(--p2y)) scale(.82); } /* pressiona Enviar */
+  56%     { transform: translate(var(--p2x), var(--p2y)) scale(1); }   /* envia */
+  76%     { transform: translate(var(--p2x), var(--p2y)) scale(1); }
+  84%     { transform: translate(var(--p0x), var(--p0y)) scale(1); }   /* volta ao repouso */
+  100%    { transform: translate(var(--p0x), var(--p0y)) scale(1); }
+}
+@keyframes ia-demo-send {
+  0%, 51%   { transform: scale(1); }
+  53%       { transform: scale(.88); }
+  57%, 100% { transform: scale(1); }
+}
+@keyframes ia-demo-chip {
+  0%, 10%   { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.16); transform: scale(1); }
+  13%       { background: rgba(255,255,255,.22); transform: scale(.95); }
+  18%, 50%  { background: rgba(29,78,216,.4); border-color: rgba(96,150,255,.7); transform: scale(1); }
+  60%, 100% { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.16); transform: scale(1); }
+}
+@keyframes ia-demo-placeholder {
+  0%, 10%   { opacity: 1; }
+  16%, 55%  { opacity: 0; }
+  61%, 100% { opacity: 1; }
+}
+@keyframes ia-demo-typed {
+  0%, 10%   { opacity: 0; }
+  16%, 55%  { opacity: 1; }
+  61%, 100% { opacity: 0; }
+}
